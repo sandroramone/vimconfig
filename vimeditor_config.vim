@@ -1,6 +1,12 @@
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************
+set nocompatible
+set splitright
+
+" Required:
+filetype plugin indent on
+
 "" Encoding
 set encoding=utf-8
 set fileencoding=utf-8
@@ -32,23 +38,8 @@ else
 endif
 
 set autoread
-set autoindent
+" set autoindent
 au FocusGained,BufEnter * :checktime
-
-"*****************************************************************************
-"" Abbreviations
-"*****************************************************************************
-"" no one is really happy until you have this shortcuts
-cnoreabbrev W! w!
-cnoreabbrev Q! q!
-cnoreabbrev Qall! qall!
-cnoreabbrev Wq wq
-cnoreabbrev Wa wa
-cnoreabbrev wQ wq
-cnoreabbrev WQ wq
-cnoreabbrev W w
-cnoreabbrev Q q
-cnoreabbrev Qall qall
 
 "*****************************************************************************
 "" Visual Settings
@@ -57,7 +48,6 @@ syntax on
 set ruler
 set number
 set mouse=a
-set cmdheight=2
 
 set clipboard+=unnamedplus
 
@@ -297,3 +287,18 @@ augroup END
 "" Vim-Emoji Config
 "*****************************************************************************
 let g:emoji_complete_overwrite_standard_keymaps = 0
+
+"*****************************************************************************
+"" Abbreviations
+"*****************************************************************************
+"" no one is really happy until you have this shortcuts
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall

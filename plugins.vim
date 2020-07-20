@@ -42,6 +42,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'                               " dependencies to run denite on vim8
 endif
 
+Plug 'Dimercel/todo-vim'                                        " code todo listining
 Plug 'Shougo/neosnippet'                                        " plugin to use snippets
 Plug 'Shougo/neosnippet-snippets'                               " snippets to neosnippet
 " Plug 'Shougo/echodoc.vim'
@@ -76,12 +77,13 @@ endif
 Plug 'Shougo/vimproc.vim', {'do': 'make'}                       " to call async process on system
 Plug 'joshdick/onedark.vim'                                     " vim theme bases on onedark of atom
 Plug 'terryma/vim-multiple-cursors'                             " added feature of multiple cursors
+" Plug 'wsdjeg/vim-todo'                                          " todo manager
 
 "*****************************************************************************
 "" Languages plugins
 "*****************************************************************************
 " multi language suport to vim
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 
 " markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
