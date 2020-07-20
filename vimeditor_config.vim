@@ -1,6 +1,3 @@
-" Required:
-filetype plugin indent on
-
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************
@@ -33,6 +30,10 @@ if exists('$SHELL')
 else
     set shell=/bin/sh
 endif
+
+set autoread
+set autoindent
+au FocusGained,BufEnter * :checktime
 
 "*****************************************************************************
 "" Abbreviations
