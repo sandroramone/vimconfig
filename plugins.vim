@@ -78,6 +78,8 @@ Plug 'Shougo/vimproc.vim', {'do': 'make'}                       " to call async 
 Plug 'joshdick/onedark.vim'                                     " vim theme bases on onedark of atom
 Plug 'terryma/vim-multiple-cursors'                             " added feature of multiple cursors
 " Plug 'wsdjeg/vim-todo'                                          " todo manager
+Plug 'vim-test/vim-test'                                        " to help execute test
+Plug 'jebaum/vim-tmuxify'                                       " to execute tmux on a panel vim
 
 "*****************************************************************************
 "" Languages plugins
@@ -130,6 +132,7 @@ Plug 'heavenshell/vim-jsdoc'
 " javascript
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/yajs.vim'
+Plug 'afshinm/npm.vim'
 
 "*****************************************************************************
 "*****************************************************************************
