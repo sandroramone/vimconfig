@@ -36,6 +36,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " engine to LSP 
 
 if has('nvim')                                                  " denite is a plugin to find files and expressions like a fzf and ctrl-p
   Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'APZelos/blamer.nvim'
 else
   Plug 'Shougo/denite.nvim'
   Plug 'roxma/nvim-yarp'                                        " dependencies to run denite on vim8
@@ -133,6 +134,10 @@ Plug 'heavenshell/vim-jsdoc'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/yajs.vim'
 Plug 'afshinm/npm.vim'
+
+
+" Github Copilit IA auxiliate
+Plug 'github/copilot.vim'
 
 "*****************************************************************************
 "*****************************************************************************
